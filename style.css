@@ -263,16 +263,16 @@ section {
   background-position: center;
   background-attachment: fixed;
 }
-
-.main h1 {
+.hero-title h1 {
   font-family: "Cookie", cursive;
+  font-size: 4rem;
+  font-weight: 900;
+  letter-spacing: 1px;
   color: var(--color-primary);
-  font-size: 4em;
 }
-.main h1 span {
-  color: #fff;
+.hero-title h1 span {
+  color: white;
 }
-
 .main h3 {
   color: #fff;
   font-size: 1.5em;
@@ -336,16 +336,29 @@ section {
   justify-content: center;
   gap: 40px;
 }
-.text-wrapper h1 {
-  font-size: 3rem;
+.main-title h1 {
+  text-transform: uppercase;
+  font-size: 2.75rem;
   font-weight: 900;
   letter-spacing: 1px;
   color: var(--color-primary);
 }
-.text-wrapper h1 span {
+.main-title h1 span {
   color: #fff;
 }
-
+.video-session {
+  margin-top: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+}
+.video {
+  display: flex;
+  width: 90%;
+  margin: auto;
+}
 /* END Main */
 
 .footer {
@@ -389,6 +402,12 @@ section {
 
   .main-content h3 {
     font-size: 1.6em;
+  }
+  .main-title h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: var(--color-primary);
   }
 }
 
