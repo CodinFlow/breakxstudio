@@ -337,6 +337,7 @@ section {
   gap: 40px;
 }
 .main-title h1 {
+  text-align: center;
   text-transform: uppercase;
   font-size: 2.75rem;
   font-weight: 900;
