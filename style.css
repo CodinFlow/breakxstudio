@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&family=Roboto:wght@100;300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,400;0,900;1,600&family=Poppins&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Cookie&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Poppins:wght@200&display=swap");
 :root {
   --color-primary: #f43a3a;
   --color-primary-dark: #ac0303;
@@ -29,7 +28,7 @@ p {
 }
 
 .navbar-brand h2 {
-  font-family: "Cookie", cursive;
+  font-family: "Comfortaa", sans-serif;
   font-size: 2rem;
   font-weight: 400;
   color: var(--color-primary);
@@ -83,16 +82,19 @@ body {
   transform: rotate(-135deg);
   -webkit-transform: rotate(-135deg);
 }
-
+.logo {
+  font-size: 1.5rem;
+  color: var(--color-primary);
+}
 .logo span {
   color: #fff;
 }
 
 .navigation a {
-  color: var(--color-primary);
+  color: var(--color-primary-dark);
   text-decoration: none;
-  font-size: 1.1em;
-  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 700;
   padding-left: 30px;
 }
 
@@ -129,17 +131,26 @@ body {
 
 .navbar li {
   margin: 0 15px;
-  font-weight: 575;
+  font-weight: 500;
 }
-
 .navbar a {
   color: #fff;
   letter-spacing: 1px;
   text-decoration: none;
 }
-
-.navbar a:hover {
-  color: var(--color-primary);
+.navbar li:after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  display: block;
+  transition: all 0.3s ease;
+  bottom: 25%;
+}
+.navbar :hover::after {
+  width: 60px;
+  height: 2px;
+  background-color: var(--color-primary);
 }
 
 .navbar-nav-right li:first-child a {
@@ -200,7 +211,6 @@ body {
 /* Mobile Menu */
 .mobile-menu {
   position: fixed;
-
   right: 0;
   background-color: #000;
   color: #fff;
@@ -257,28 +267,30 @@ section {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75)),
     url(images/4k.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
+.hero-title {
+  display: flex;
+  flex-direction: column;
+}
 .hero-title h1 {
-  font-family: "Cookie", cursive;
+  font-family: "Comfortaa", sans-serif;
   font-size: 4rem;
-  font-weight: 900;
-  letter-spacing: 1px;
-  color: var(--color-primary);
+  font-weight: 700;
+  color: var(--color-primary-dark);
 }
 .hero-title h1 span {
   color: white;
 }
 .main h3 {
   color: #fff;
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: 600;
-  letter-spacing: 1px;
-  margin-top: 10px;
+  letter-spacing: 2px;
   margin-bottom: 30px;
 }
 
@@ -292,7 +304,8 @@ section {
   padding: 0.9375em 2.1875em;
   letter-spacing: 1px;
   border-radius: 0px;
-  margin-bottom: 40px;
+  margin-top: 64px;
+  margin-bottom: 32px;
   transition: 0.7s ease;
 }
 
@@ -308,6 +321,30 @@ section {
   width: 90%;
   margin: auto;
 }
+/* About */
+.about {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  gap: 20px;
+}
+.about img {
+  height: 100%;
+  height: auto;
+  flex: 2;
+  box-shadow: -50px -50px 0 -40px var(--color-primary),
+    50px 50px 0 -40px var(--color-primary);
+}
+
+.about-text-wrapper {
+  flex: 1;
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
 
 .main-wrapper {
   margin: 100px 0px;
@@ -322,10 +359,12 @@ section {
   gap: 20px;
 }
 .main-wrapper img {
-  height: 380px;
+  height: 100%;
+  height: auto;
 }
 .main-wrapper-reversed img {
-  height: 380px;
+  height: 100%;
+  height: auto;
 }
 
 .text-wrapper {
@@ -348,7 +387,7 @@ section {
   color: #fff;
 }
 .video-session {
-  margin-top: 50px;
+  margin-top: 32px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -413,16 +452,15 @@ section {
 }
 
 @media (max-width: 960px) {
-  .text-xl {
-    font-size: 30px;
+  .hero-title h1 {
+    font-size: 3rem;
   }
-
-  .text-lg {
-    font-size: 25px;
+  .about {
+    display: flex;
+    flex-direction: column;
   }
-
-  .text-md {
-    font-size: 19px;
+  .about img {
+    align-self: center;
   }
   .main-wrapper {
     display: flex;

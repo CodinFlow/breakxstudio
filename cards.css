@@ -1,5 +1,5 @@
 .card-container {
-  margin-top: 50px;
+  margin-top: 32px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -50,7 +50,7 @@
   transition-duration: 0.4s;
 }
 /* Media Query */
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
   .card-container {
     display: flex;
     flex-direction: column;
