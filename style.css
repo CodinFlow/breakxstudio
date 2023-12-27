@@ -232,6 +232,7 @@ body {
 .mobile-menu a {
   text-decoration: none;
   font-size: 1.1rem;
+  z-index: 99;
 }
 
 .mobile-menu a:hover {
@@ -427,7 +428,7 @@ section {
   color: #fff;
 }
 .video-session {
-  margin-top: 64px;
+  margin-top: 128px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -435,7 +436,7 @@ section {
 }
 .video {
   display: flex;
-  width: 90%;
+  width: 100%;
   margin: auto;
 }
 /* END Main */

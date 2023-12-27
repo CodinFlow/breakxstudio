@@ -42,13 +42,11 @@
   outline: none;
   margin-top: 50px;
   cursor: pointer;
+  text-decoration: none;
 }
 .card-button:hover {
-  background-color: #e60808;
+  background-color: #920606;
   transition-duration: 0.4s;
-}
-.card-button a {
-  text-decoration: none;
 }
 
 /* Media Query */
