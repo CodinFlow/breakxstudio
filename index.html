@@ -10,6 +10,7 @@
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="cards.css" />
+    <link rel="stylesheet" href="kontakt.css" />
     <title>Break X Studio</title>
   </head>
 
@@ -26,13 +27,13 @@
 
         <ul class="navbar-nav-right">
           <li>
-            <a href="#">Startseite</a>
+            <a href="/">Startseite</a>
           </li>
           <li>
             <a href="#about">Über Uns</a>
           </li>
           <li>
-            <a href="#more">Mehr</a>
+            <a href="#mehr">Mehr</a>
           </li>
           <li>
             <a href="#leistungen">Leistungen</a>
@@ -66,7 +67,7 @@
         </li>
 
         <li>
-          <a href="#more">Mehr</a>
+          <a href="#mehr">Mehr</a>
         </li>
         <li>
           <a href="#kontakt">Kontakt</a>
@@ -82,7 +83,7 @@
           <h3>Since 2021</h3>
         </div>
 
-        <a href="#kontakt" download class="main-btn">Erfahren Sie mehr </a>
+        <a href="#kontakt" download class="main-btn">kontaktiere mich</a>
         <div class="social-icons">
           <a href="#"><i class="fab fa-linkedin"></i></a>
           <a href="#"><i class="fab fa-twitter"></i></a>
@@ -121,69 +122,77 @@
         </div>
 
         <!-- Program and Skills -->
-        <div class="title">
+        <div id="mehr" class="title">
           <h1>Konzept</h1>
         </div>
-        <div class="main-wrapper">
-          <img
-            src="./images/break_dancing.jpg"
-            width="660"
-            height="445"
-            alt=""
-            srcset=""
-          />
-          <div class="text-wrapper">
-            <div class="main-title">
-              <h1><span>Break</span>Dance</h1>
-            </div>
+        <div class="konzept">
+          <div class="main-wrapper">
+            <img
+              src="./images/breakdance_01.jpg"
+              width="920"
+              height="554"
+              alt=""
+              srcset=""
+            />
+            <div class="text-wrapper">
+              <div class="main-title">
+                <h1><span>Break</span>Dance</h1>
+              </div>
 
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad odit
-              temporibus nostrum. Minima adipisci earum, eum voluptates
-              perferendis quidem nulla nam. Numquam quaerat accusamus,
-              dignissimos nam perspiciatis eligendi in rerum.
-            </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
+                odit temporibus nostrum. Minima adipisci earum, eum voluptates
+                perferendis quidem nulla nam. Numquam quaerat accusamus,
+                dignissimos nam perspiciatis eligendi in rerum.
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div class="main-wrapper-reversed">
-          <img
-            src="./images/break_dancing.jpg"
-            width="660"
-            height="445"
-            alt=""
-            srcset=""
-          />
-          <div class="text-wrapper">
-            <div class="main-title">
-              <h1>Programm <span>Skills</span></h1>
+          <div class="main-wrapper-reversed">
+            <img
+              src="./images/breakdance_02.jpg"
+              width="725"
+              height="580"
+              alt=""
+              srcset=""
+            />
+            <div class="text-wrapper">
+              <div class="main-title">
+                <h1>Programm <span>Skills</span></h1>
+              </div>
+
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
+                odit temporibus nostrum. Minima adipisci earum, eum voluptates
+                perferendis quidem nulla nam. Numquam quaerat accusamus,
+                dignissimos nam perspiciatis eligendi in rerum.
+              </p>
             </div>
-
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad odit
-              temporibus nostrum. Minima adipisci earum, eum voluptates
-              perferendis quidem nulla nam. Numquam quaerat accusamus,
-              dignissimos nam perspiciatis eligendi in rerum.
-            </p>
           </div>
         </div>
 
         <!-- Video Session -->
-        <div id="more" class="video-session">
+        <div class="video-session">
           <video class="video" controls autoplay muted loop>
             <source src="./videos/bboyin.mp4" type="video/mp4" />
           </video>
         </div>
 
         <!-- Pricing and Services -->
-        <div class="title">
+        <div id="leistungen" class="title">
           <h1>Leistungen</h1>
         </div>
-        <div class="services" id="leistungen">
+        <div class="services">
           <!-- card 3 -->
           <div class="card-container">
             <div class="card">
               <div class="card-title">Personal Training</div>
+              <div class="price-wrapper">
+                <h1>59€</h1>
+                <p>per Stunde</p>
+              </div>
+
+              <hr class="solid" />
               <div class="card-text">
                 <p><span>&#10003; </span> Lorem ipsum</p>
                 <p><span>&#10003; </span> Lorem ipsum dolor sit amet</p>
@@ -200,6 +209,12 @@
 
             <div class="card">
               <div class="card-title">Coaching Online</div>
+              <div class="price-wrapper">
+                <h1>59€</h1>
+                <p>per Stunde</p>
+              </div>
+
+              <hr class="solid" />
               <div class="card-text">
                 <p><span>&#10003; </span> Lorem ipsum</p>
                 <p><span>&#10003; </span> Lorem ipsum dolor sit amet</p>
@@ -215,17 +230,71 @@
 
             <div class="card">
               <div class="card-title">Gruppe training</div>
+              <div class="price-wrapper">
+                <h1>59€</h1>
+                <p>per Stunde</p>
+              </div>
+
+              <hr class="solid" />
+
               <div class="card-text">
                 <p><span>&#10003; </span> Lorem ipsum</p>
                 <p><span>&#10003; </span> Lorem ipsum dolor sit amet</p>
                 <p><span>&#10003; </span> Lorem ipsum dolor sit</p>
                 <p><span>&#10003; </span> Lorem ipsum dolor sit amet</p>
               </div>
+
               <a class="card-button" href="http://wa.me/+4915751088331"
                 >kontaktiere mich</a
               >
             </div>
           </div>
+        </div>
+
+        <!-- Kontakt  -->
+        <div id="kontakt" class="title">
+          <h1>Kontakt</h1>
+        </div>
+        <div class="contact-container">
+          <form action="/action_page.php">
+            <label for="fname">Vorname</label>
+            <input
+              required
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Vorname.."
+            />
+
+            <label for="lname">Nachname</label>
+            <input
+              required
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Nachname.."
+            />
+
+            <label for="email">E-mail-Adresse</label>
+            <input
+              required
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Email.."
+            />
+
+            <label for="subject">Subjekt</label>
+            <textarea
+              required
+              id="subject"
+              name="subject"
+              placeholder="Schreibe uns.."
+              style="height: 200px"
+            ></textarea>
+
+            <input type="submit" value="Absenden" />
+          </form>
         </div>
       </div>
     </main>
