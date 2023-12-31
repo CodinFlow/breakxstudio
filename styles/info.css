@@ -1,0 +1,45 @@
+.info-container {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.box {
+  padding: 16px;
+  width: 30%;
+  background-color: #202020;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.box:hover {
+  box-shadow: 0 0 8px 0.025px #e0484f;
+  opacity: 0.9;
+  transition: all 1s 0.025s ease;
+}
+
+.box h3 {
+  margin-top: 32px;
+  font-size: 1rem;
+}
+.box p {
+  color: whitesmoke;
+}
+
+/* Media Query */
+@media (max-width: 960px) {
+  .info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+  }
+  .box {
+    width: 60%;
+    align-self: center;
+  }
+}

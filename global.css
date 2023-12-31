@@ -394,13 +394,10 @@ section {
 
 .konzept {
   margin: 32px 0px;
-  border-radius: 5px;
-  background-color: #181818;
-  padding: 20px;
 }
 
 .main-wrapper {
-  margin: 64px 0px;
+  margin: 16px 0px;
   display: flex;
   justify-content: space-between;
   gap: 20px;
