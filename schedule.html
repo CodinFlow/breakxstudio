@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/schedule.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Navbar  -->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="navbar-brand">
+          <a href="index.html">
+            <!--  <img src="logo.png" alt="Logo" /> -->
+            <p class="logo">Break <span>X</span> Studio</p>
+          </a>
+        </div>
+
+        <ul class="navbar-nav-right">
+          <li>
+            <a href="index.html">Startseite</a>
+          </li>
+          <li>
+            <a href="index.html#about">Über Uns</a>
+          </li>
+          <li>
+            <a href="index.html#mehr">Mehr</a>
+          </li>
+          <li>
+            <a href="index.html#leistungen">Leistungen</a>
+          </li>
+
+          <li>
+            <a href="schedule.html">Schedule</a>
+          </li>
+
+          <li>
+            <a href="index.html#kontakt">Kontakt</a>
+          </li>
+        </ul>
+
+        <!-- Hamburger Menu -->
+        <button type="button" class="hamburger" id="menu-btn">
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu hidden" id="menu">
+      <ul>
+        <li>
+          <a href="index.html">Startseite</a>
+        </li>
+        <li>
+          <a href="#about">Über Uns</a>
+        </li>
+        <li>
+          <a href="#leistungen">Leistungen</a>
+        </li>
+
+        <li>
+          <a href="#mehr">Mehr</a>
+        </li>
+        <li>
+          <a href="#kontakt">Kontakt</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <section class="design-section">
+        <div class="timeline">
+          <div class="timeline-empty"></div>
+          <div class="timeline-middle">
+            <div class="timeline-circle"></div>
+          </div>
+
+          <div class="timeline-component timeline-content">
+            <h3>Montag</h3>
+            <p>9:00 AM</p>
+            <p>Dance Class</p>
+          </div>
+          <div class="timeline-component timeline-content">
+            <h3>Mittwoch</h3>
+            <p>19:00 AM</p>
+            <p>House Session</p>
+          </div>
+          <div class="timeline-middle"><div class="timeline-circle"></div></div>
+          <div class="timeline-empty"></div>
+
+          <div class="timeline-empty"></div>
+
+          <div class="timeline-middle">
+            <div class="timeline-circle"></div>
+          </div>
+          <div class="timeline-component timeline-content">
+            <h3>Fritag</h3>
+            <p>13:00 AM</p>
+            <p>Dance Class</p>
+          </div>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-component timeline-content">
+            <h3>Samsatg</h3>
+            <p>19:00 AM</p>
+            <p>House Session</p>
+          </div>
+          <div class="timeline-middle"><div class="timeline-circle"></div></div>
+          <div class="timeline-empty"></div>
+
+          <div class="timeline-empty"></div>
+
+          <div class="timeline-middle"></div>
+        </div>
+      </section>
+    </div>
+
+    <script src="./javascript/script.js"></script>
+  </body>
+</html>

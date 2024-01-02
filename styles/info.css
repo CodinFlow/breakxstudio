@@ -7,7 +7,9 @@
 .box {
   padding: 16px;
   width: 30%;
-  background-color: #202020;
+  background: #202020;
+  -webkit-box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+  box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
   border-radius: 8px;
   text-align: center;
   display: flex;
@@ -19,7 +21,7 @@
 .box:hover {
   box-shadow: 0 0 8px 0.025px #e0484f;
   opacity: 0.9;
-  transition: all 1s 0.025s ease;
+  transition: all 0.1s 0.1s ease;
 }
 
 .box h3 {
@@ -35,7 +37,7 @@
   .info-container {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 32px;
     width: 100%;
   }
   .box {
