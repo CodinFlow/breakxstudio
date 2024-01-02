@@ -7,7 +7,7 @@
 .box {
   padding: 16px;
   width: 30%;
-  background: #202020;
+  background: #1d1d1d;
   -webkit-box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
   box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
   border-radius: 8px;

@@ -27,13 +27,6 @@ p {
   line-height: 1.7;
 }
 
-.navbar-brand h2 {
-  font-family: "Comfortaa", sans-serif;
-  font-size: 2rem;
-  font-weight: 400;
-  color: var(--color-primary);
-}
-
 body {
   background-color: #1f1f1f;
   color: #fff;
@@ -137,6 +130,14 @@ body {
   color: #fff;
   letter-spacing: 1px;
   text-decoration: none;
+}
+.navbar-brand a {
+  font-family: "Comfortaa", sans-serif;
+  color: var(--color-primary-dark);
+  font-size: 1.45rem;
+}
+.navbar-brand span {
+  color: white;
 }
 .navbar li:after {
   content: "";
@@ -267,7 +268,6 @@ section {
 }
 
 .main {
-  width: 100%;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -282,20 +282,19 @@ section {
   flex-direction: column;
   justify-content: flex-start;
 }
-.hero-title h1 {
+.hero-title {
   font-family: "Comfortaa", sans-serif;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 700;
   color: var(--color-primary-dark);
 }
-.hero-title h1 span {
-  font-family: "Comfortaa", sans-serif;
+.hero-title span {
   color: white;
 }
 .main h3 {
   color: #fff;
-  font-size: 1.2em;
-  font-weight: 600;
+  font-size: 0.5em;
+  font-weight: 500;
   letter-spacing: 2px;
   margin-left: 4px;
   margin-bottom: 30px;
@@ -458,7 +457,7 @@ hr.solid {
 }
 
 .footer {
-  background-color: #000;
+  background-color: #050505;
   color: #fff;
   padding: 5em 2rem;
   display: flex;
@@ -468,13 +467,22 @@ hr.solid {
 .footer-title {
   font-size: 1em;
 }
-
+.footer-title strong {
+  color: var(--color-primary-dark);
+}
 .footer-title span {
-  color: #3a6cf4;
+  color: #fff;
+}
+
+.policy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
 }
 
 .footer .social-icons a {
-  color: #333;
+  color: whitesmoke;
   font-size: 1.3em;
   padding: 0 12px 0 0;
 }
@@ -523,6 +531,17 @@ hr.solid {
   }
   .konzept {
     padding: 4px 16px;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .footer .policy {
+    align-self: flex-start;
+  }
+  .footer .social-icons {
+    margin-top: 32px;
   }
 }
 
