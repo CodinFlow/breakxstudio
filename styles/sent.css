@@ -34,6 +34,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 50px;
+}
+
+.main-content h1 {
+  align-self: center;
 }
 
 .main-content img {
@@ -66,4 +71,21 @@ body {
   word-break: break-word;
   border: 0;
   text-decoration: none;
+}
+
+/* Media Query */
+@media (max-width: 1200px) {
+}
+@media (max-width: 960px) {
+  .main-content h1 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 768px) {
+}
+
+@media (max-width: 641px) {
+}
+
+@media (max-width: 300px) {
 }

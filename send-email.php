@@ -22,7 +22,7 @@ $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 $mail->Port = 587;
 
 $mail->Username = "contact.flexible@gmail.com";
-$mail->Password = "gjnfkkpjkwkhtbcy";
+$mail->Password = "password";
 
 $mail->setFrom($email, $name);
 $mail->addAddress("contact.flexible@gmail.com", "BreakXStudio");
