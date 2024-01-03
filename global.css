@@ -213,7 +213,7 @@ body {
 .mobile-menu {
   position: fixed;
   right: 0;
-  background-color: #000;
+  background-color: #050505;
   color: #fff;
   width: 90%;
   height: 100vh;
@@ -271,10 +271,10 @@ section {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75)),
-    url(images/4k.jpg) no-repeat;
+  background-image: url(images/4k.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   background-attachment: fixed;
 }
 .hero-title {
@@ -546,6 +546,9 @@ hr.solid {
 }
 
 @media (max-width: 960px) {
+  .main {
+    background-image: url(images/4k_mobile.jpg);
+  }
   .hero-title h1 {
     font-size: 3rem;
   }
