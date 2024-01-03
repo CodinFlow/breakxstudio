@@ -134,7 +134,7 @@ body {
 .navbar-brand a {
   font-family: "Comfortaa", sans-serif;
   color: var(--color-primary-dark);
-  font-size: 1.45rem;
+  font-size: 1.25rem;
 }
 .navbar-brand span {
   color: white;
@@ -546,9 +546,6 @@ hr.solid {
 }
 
 @media (max-width: 960px) {
-  .main {
-    background-image: url(images/4k_mobile.jpg);
-  }
   .hero-title h1 {
     font-size: 3rem;
   }
@@ -569,6 +566,11 @@ hr.solid {
   .navbar .navbar-nav-left,
   .navbar .navbar-nav-right {
     display: none;
+  }
+  .main {
+    background-image: url(images/4k_mobile.jpg);
+    height: 100vh;
+    width: 100vw;
   }
 }
 
