@@ -6,8 +6,10 @@
   width: 100%;
 }
 .card {
-  background: #202020;
-  box-shadow: 0 0 16px 0.1px #e0484f;
+  background: #1d1d1d;
+  /* box-shadow: 0 0 16px 0.1px #e0484f; */
+  -webkit-box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+  box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
   width: 31%;
   padding: 20px;
   text-align: center;
@@ -47,6 +49,7 @@
   margin-top: 50px;
   cursor: pointer;
   text-decoration: none;
+  border-radius: 4px;
 }
 .card-button:hover {
   background-color: #920606;

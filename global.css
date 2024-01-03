@@ -271,7 +271,8 @@ section {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url(images/4k.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5)),
+    url(images/4k.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -313,6 +314,7 @@ section {
   margin-top: 64px;
   margin-bottom: 32px;
   transition: 0.7s ease;
+  border-radius: 4px;
 }
 
 .social-icons a {
@@ -568,9 +570,8 @@ hr.solid {
     display: none;
   }
   .main {
-    background-image: url(images/4k_mobile.jpg);
-    height: 100vh;
-    width: 100vw;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5)),
+      url(images/4k.jpg);
   }
 }
 
