@@ -7,7 +7,7 @@
 .box {
   padding: 16px;
   width: 30%;
-  background: #1d1d1d;
+  background: #050505;
   -webkit-box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
   box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
   border-radius: 8px;
@@ -17,11 +17,6 @@
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-}
-.box:hover {
-  box-shadow: 0 0 8px 0.025px #e0484f;
-  opacity: 0.9;
-  transition: all 0.1s 0.1s ease;
 }
 
 .box h3 {
