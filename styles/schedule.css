@@ -30,7 +30,6 @@
   -webkit-box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
   box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
   border-radius: 5px;
-  color: white;
   padding: 1.75rem;
   transition: 0.4s ease;
   overflow-wrap: break-word !important;
@@ -38,7 +37,10 @@
   margin-bottom: 20px;
   border-radius: 6px;
 }
-
+.timeline-content h3 {
+  color: #faf9f6;
+  font-weight: 400;
+}
 .timeline-component {
   margin: 0px 20px 20px 20px;
 }
