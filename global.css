@@ -317,6 +317,11 @@ section {
   transition: 0.7s ease;
   border-radius: 4px;
 }
+.main-btn:hover {
+  background-color: #920606;
+  font-size: 1.025em;
+  transition-duration: 0.4s;
+}
 
 .social-icons a {
   color: #fff;

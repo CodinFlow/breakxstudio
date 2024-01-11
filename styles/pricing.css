@@ -67,6 +67,7 @@
 }
 .card-button:hover {
   background-color: #920606;
+  font-size: 1.075em;
   transition-duration: 0.4s;
 }
 
