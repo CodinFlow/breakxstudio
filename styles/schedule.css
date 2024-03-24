@@ -5,8 +5,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #1f1f1f;
+  width: 100%;
   min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5)),
+    url(../images/dance_floor.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  /*  background-attachment: fixed; */
 }
 
 .design {
